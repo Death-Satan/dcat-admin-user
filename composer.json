@@ -1,0 +1,31 @@
+{
+    "name": "death_satan/dcat-admin-user",
+    "description": "dcat-admin users plug-in zh-cn:dcat-admin用户管理插件",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/death_satan/dcat-admin-user",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Death-Satan",
+            "email": "2771717608@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\Satan\\Admin\\User\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\Satan\\Admin\\User\\DcatAdminUserServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\Satan\\Admin\\User\\DcatAdminUserServiceProvider"
+            ]
+        }
+    }
+}
